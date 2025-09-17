@@ -1,8 +1,15 @@
+import Banner from "../Banner/Banner";
+import Category from "../Category/Category";
+import CompanyLogos from "../CompanyLogos/CompanyLogos";
+import ServicesSection from "../ServicesSection/ServicesSection";
 
 const Home = () => {
     return (
         <div>
-            <h1>This is Home</h1>
+            <Banner></Banner>
+            <Category></Category>
+            <ServicesSection></ServicesSection>
+            <CompanyLogos></CompanyLogos>
         </div>
     );
 };
