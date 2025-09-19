@@ -2,12 +2,12 @@ import { CiDeliveryTruck } from "react-icons/ci";
 
 const Category = () => {
     return (
-        <div className="my-10">
-            <h3 className="text-2xl my-5 font-bold">
+        <div  className="my-10">
+            <h3 className="text-2xl my-5 font-bold ml-3 md:ml-0">
                 How it Works
             </h3>
-            <div className="flex flex-col md:flex-row justify-around">
-                <div className="bg-emerald-600 rounded-2xl p-7 my-3 md:my-0">
+            <div  className="flex flex-col md:flex-row justify-around">
+                <div data-aos="flip-up" className="bg-[#03373D] rounded-2xl p-7 my-3 md:my-0">
                     <span className="text-5xl"><CiDeliveryTruck /></span>
                     <h5 className="font-bold my-2">
                         Booking Pick & Drop
@@ -16,7 +16,7 @@ const Category = () => {
                         From personal packages to <br /> business shipments — we deliver <br /> on time, every time.
                     </p>
                 </div>
-                <div className="bg-emerald-600 rounded-2xl p-7 my-3 md:my-0">
+                <div data-aos="flip-up" className="bg-[#03373D] rounded-2xl p-7 my-3 md:my-0">
                     <span className="text-5xl"><CiDeliveryTruck /></span>
                     <h5 className="font-bold my-2">
                         Cash On Delivery
@@ -25,7 +25,7 @@ const Category = () => {
                         From personal packages to <br /> business shipments — we deliver <br /> on time, every time.
                     </p>
                 </div>
-                <div className="bg-emerald-600 rounded-2xl p-7 my-3 md:my-0">
+                <div data-aos="flip-up" className="bg-[#03373D] rounded-2xl p-7 my-3 md:my-0">
                     <span className="text-5xl"><CiDeliveryTruck /></span>
                     <h5 className="font-bold my-2">
                         Delivery Hub
@@ -34,7 +34,7 @@ const Category = () => {
                         From personal packages to <br /> business shipments — we deliver <br /> on time, every time.
                     </p>
                 </div>
-                <div className="bg-emerald-600 rounded-2xl p-7 my-3 md:my-0">
+                <div data-aos="flip-up" className="bg-[#03373D] rounded-2xl p-7 my-3 md:my-0">
                     <span className="text-5xl"><CiDeliveryTruck /></span>
                     <h5 className="font-bold my-2">
                         Booking SME & Corporate

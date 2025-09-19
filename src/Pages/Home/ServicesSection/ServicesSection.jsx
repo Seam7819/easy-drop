@@ -43,7 +43,7 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section  className="bg-teal-900 py-12 px-4 rounded-xl my-10" data-aos="fade-up" data-aos-duration="1000">
+    <section  className="bg-[#03373D] py-12 px-4 rounded-xl my-10" data-aos="fade-up" data-aos-duration="1000">
       <div className="container mx-auto text-center">
         <h2 data-aos="fade-down" data-aos-duration="1200" className="text-3xl font-bold text-white mb-2 border-b-2 border-blue-500 inline-block pb-2">
           Our Services
