@@ -48,7 +48,7 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end gap-3">
-                <button className="btn btn-outline"><Link>Sign In</Link></button>
+                <button className="btn btn-outline"><Link to="/login">Sign In</Link></button>
                 <button className="btn btn-success"><Link>Be A Rider </Link></button>
                 <span className="text-4xl mb-5 -ml-5 text-emerald-400"><BsArrowUpLeftCircleFill />
                 </span>
