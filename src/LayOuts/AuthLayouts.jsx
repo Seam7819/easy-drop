@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router'
+import { Link, Outlet } from 'react-router'
 import authImg from "../../src/assets/brands/authImage.png"
 import Logo from "../../public/Friendly Wordmark Logo for Easy Drop.png"
 
@@ -6,7 +6,8 @@ import Logo from "../../public/Friendly Wordmark Logo for Easy Drop.png"
 const AuthLayouts = () => {
     return (
         <div className=" bg-base-200 p-10">
-            <img className="w-20  h-16 " src={Logo} alt="" />
+            <Link to='/'>
+            <img className="w-20  h-16 " src={Logo} alt="" /></Link>
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <div className='flex-1'>
                     <img

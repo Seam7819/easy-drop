@@ -1,8 +1,12 @@
 import { Link, NavLink } from "react-router";
 import { BsArrowUpLeftCircleFill } from "react-icons/bs";
 import Logo from "../../../public/Friendly Wordmark Logo for Easy Drop.png"
+import useAuth from "../../hooks/useAuth";
+import Logout from "../../Pages/Authentication/Logout/Logout";
 
 const NavBar = () => {
+
+    const {user} = useAuth()
 
     const navLinks = <>
         <li><NavLink
@@ -17,9 +21,11 @@ const NavBar = () => {
         <li><NavLink className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "bg-emerald-400 text-black" : ""
         } to="/about">About Us</NavLink></li>
+
         <li><NavLink className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "bg-emerald-400 text-black" : ""
-        } to="pricing">Pricing</NavLink></li>
+        } to="/pricing">Pricing</NavLink></li>
+
         <li><NavLink className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "bg-emerald-400 text-black" : ""
         } to="/rider">Be a Rider</NavLink></li>
@@ -40,7 +46,7 @@ const NavBar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <img className="w-20 hidden md:flex h-16 " src={Logo} alt="" />
+                <Link to='/'><img className="w-20 hidden md:flex h-16 " src={Logo} alt="" /></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -48,7 +54,10 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end gap-3">
-                <button className="btn btn-outline"><Link to="/login">Sign In</Link></button>
+                {
+                    user? <Logout></Logout> : <button className="btn btn-outline"><Link to="/login">Sign In</Link></button>
+                }
+                
                 <button className="btn btn-success"><Link>Be A Rider </Link></button>
                 <span className="text-4xl mb-5 -ml-5 text-emerald-400"><BsArrowUpLeftCircleFill />
                 </span>
